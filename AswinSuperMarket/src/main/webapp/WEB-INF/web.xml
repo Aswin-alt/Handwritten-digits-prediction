@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>AswinSuperMarket</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  	<servlet-name>CustomerSer</servlet-name>
+  	<servlet-class>com.aswin.controller.CustomerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerSer</servlet-name>
+  	<url-pattern>/customercontroller/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>CreateCustomerSer</servlet-name>
+  	<servlet-class>com.aswin.controller.CreateCustomerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CreateCustomerSer</servlet-name>
+  	<url-pattern>/createcustomercontroller/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>CustomerDetailSer</servlet-name>
+  	<servlet-class>com.aswin.controller.CustomerDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerDetailSer</servlet-name>
+  	<url-pattern>/customerdetailcontroller/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BillSer</servlet-name>
+  	<servlet-class>com.aswin.controller.BillController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BillSer</servlet-name>
+  	<url-pattern>/billcontroller/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Bill2Ser</servlet-name>
+  	<servlet-class>com.aswin.controller.BillController2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Bill2Ser</servlet-name>
+  	<url-pattern>/billcontroller2/*</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
